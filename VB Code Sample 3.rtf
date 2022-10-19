@@ -1,0 +1,98 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red139\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c60000\c100000\c100000;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs33\fsmilli16940 \cf0 \cb2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 Dim imgindex As Integer\
+Dim imgtag As String\
+\
+Private Sub Image1_DragDrop(Index As Integer, Source As Control, X As Single, Y As Single)\
+\
+imgtag = Source.Tag\
+imgindex = Index\
+Select Case imgindex\
+\
+Case 0\
+If imgtag = "11" Then\
+Image1(0).Picture = Image1(9).Picture\
+Source.Visible = False\
+Else\
+Source.Visible = True\
+End If\
+\
+Case 1\
+\
+If imgtag = "12" Then\
+Image1(1).Picture = Image1(10).Picture\
+Source.Visible = False\
+Else\
+Source.Visible = True\
+End If\
+\
+Case 2\
+\
+If imgtag = 13 Then\
+Image1(2).Picture = Image1(11).Picture\
+Source.Visible = False\
+Else\
+Source.Visible = True\
+End If\
+\
+Case 3\
+If imgtag = 21 Then\
+Image1(3).Picture = Image1(12).Picture\
+Source.Visible = False\
+Else\
+Source.Visible = True\
+End If\
+\
+Case 4\
+\
+If imgtag = 22 Then\
+Image1(4).Picture = Image1(13).Picture\
+Source.Visible = False\
+Else\
+Source.Visible = True\
+End If\
+\
+Case 5\
+If imgtag = 23 Then\
+Image1(5).Picture = Image1(14).Picture\
+Source.Visible = False\
+Else\
+Source.Visible = True\
+End If\
+\
+Case 6\
+If imgtag = 31 Then\
+Image1(6).Picture = Image1(15).Picture\
+Source.Visible = False\
+Else\
+Source.Visible = True\
+End If\
+\
+Case 7\
+\
+If imgtag = 32 Then\
+Image1(7).Picture = Image1(16).Picture\
+Source.Visible = False\
+Else\
+Source.Visible = True\
+End If\
+\
+Case 8\
+\
+If imgtag = 33 Then\
+Image1(8).Picture = Image1(17).Picture\
+Source.Visible = False\
+Else\
+Source.Visible = True\
+End If\
+\
+End Select\
+\
+End Sub}

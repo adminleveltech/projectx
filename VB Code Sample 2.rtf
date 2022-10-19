@@ -1,0 +1,25 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Arial-BoldMT;\f1\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red139\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c60000\c100000\c100000;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa400\partightenfactor0
+
+\f0\b\fs40 \cf0 \cb2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 The code\cb1 \
+\pard\pardeftab720\sa338\partightenfactor0
+
+\f1\b0\fs33\fsmilli16940 \cf0 \cb2 Sub Combo1_Change( )\cb1 \uc0\u8232 \u8232 \cb2 if ListIndex=0 Then\cb1 \uc0\u8232 \cb2 File1.Pattern=("*.wav")\cb1 \uc0\u8232 \cb2 ElseIf ListIndex=1 Then\cb1 \uc0\u8232 \cb2 File1.Pattern=("*.mid")\cb1 \uc0\u8232 \cb2 Else\cb1 \uc0\u8232 \cb2 File1.Pattern=("*.*)\cb1 \uc0\u8232 \cb2 End If\cb1 \uc0\u8232 \cb2 End Sub\cb1 \
+\cb2 If Right(File1.Path,1) <>"\\" Then\cb1 \uc0\u8232 \cb2 \'a0filenam=File1.Path +"\\"+File1.Filename\cb1 \
+\cb2 Else\cb1 \uc0\u8232 \cb2 filenam=File1.Path+File1.Filename\cb1 \
+\cb2 End If\cb1 \
+\cb2 Text1.Text=filenam\cb1 \
+\cb2 End Sub\cb1 \
+\cb2 Private Sub Play_Click( )\cb1 \uc0\u8232 \u8232 \cb2 If Combo1.ListIndex=0 Then\cb1 \uc0\u8232 \cb2 MMControl1.DeviceType="WaveAudio"\cb1 \uc0\u8232 \cb2 ElseIf Combo1.ListIndex=1 Then\cb1 \uc0\u8232 \cb2 MMControll.DeviceType="Sequencer"\cb1 \uc0\u8232 \cb2 End If\cb1 \
+\cb2 MMControl1.FileName=Text1.Text\cb1 \uc0\u8232 \cb2 MMControl1.Command="Open"\cb1 \uc0\u8232 \cb2 MMControl1.Command="Play"\cb1 \
+\cb2 End Sub\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs30\fsmilli15400 \cf0 \cb2 \
+}

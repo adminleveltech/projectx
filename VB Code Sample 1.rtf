@@ -1,0 +1,16 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa338\partightenfactor0
+
+\f0\fs33\fsmilli16940 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Private Sub Stop_Click( )\uc0\u8232 \u8232 If MMControl1.Mode=524 Then Exit Sub\u8232 If MMControl1.Mode<>525 Then\u8232 MMControl1.Wait=True\u8232 MMControl1.Command="Close"\
+End Sub\
+Private Sub Dir1_Change( )\uc0\u8232 \u8232 File1.Path=Dir1.Path\u8232 If Combo1.ListIndex=0 Then\u8232 File1.Pattern=("*.wav")\u8232 ElseIf Combo1.ListIndex=1 Then\u8232 File1.Pattern=("*.mid")\u8232 Else\u8232 File1.Pattern=("*.*)\u8232 End If\
+Private Sub Drive1.Change( )\uc0\u8232 \u8232 Dir1.Path=Drive1.Drive\u8232 End Sub\
+Private Sub Form_Load( )\uc0\u8232 \u8232 Top=(Screen.Height-Height)\\2\u8232 Left=(Screen.Width-Width)\\2\u8232 Combo1.Text="*.wav"\u8232 Combo1.AddItem "*.wav"\u8232 Combo1.AddItem "*.mid"\u8232 Combo1.AddItem "All files"\
+End\'a0 Sub\
+}
